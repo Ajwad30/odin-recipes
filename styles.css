@@ -1,16 +1,5 @@
 * {
-    background-color: rgb(148, 174, 194);
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-}
-
-div {
-    color:blueviolet;
-    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Helvetica, sans-serif;
 }
 
 img {
@@ -20,4 +9,287 @@ img {
 
 h3 {
     color: white;
+}
+
+a{
+    color:antiquewhite;
+}
+
+a:visited{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+a:hover{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+a:focus{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+a:hover, a:active{
+    text-decoration: none;
+    color:antiquewhite;
+}
+
+body{
+    margin:0;
+}
+
+.bg {
+    width:100%;
+    height:100vh;
+    background: url(img/bg.jpg);
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+    box-shadow: 0 2px 2px black;
+    position: fixed;
+    background-color:rgba(7, 0, 0, 0.85);
+    color:antiquewhite;
+}
+
+ul {
+    padding-left:0;
+}
+
+
+nav ul li{
+    list-style: none;
+    margin: 2vh;
+    display:inline-flex;
+}
+
+.content{
+    width:90%;
+    height:70%;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Created 3 seperate columns for individual recipe page links below, dividing the space up to design the columns and make everything
+fit inside of them evenly.*/
+
+.col{
+    width:30%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.col .top{
+    width:100%;
+    height:70%;
+    background:rgba(0, 0, 0, 0.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.col .bottom{
+    width:100%;
+    height:30%;
+    background:rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.sc{
+    width:450px;
+    height:300px;
+    object-fit:cover;
+    border-radius:200px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+}
+
+.lg{
+    width:450px;
+    height:300px;
+    object-fit:cover;
+    border-radius:200px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+}
+
+.gu{
+    width:450px;
+    height:300px;
+    object-fit:cover;
+    border-radius:200px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+}
+
+.t2,.t1,.t3{
+    font-size:36px;
+}
+/* Created a box in middle of page for recipe details, creates seperate columns for diffent parts of layout and ensures that all
+recipe pages will look the same.*/
+.contbox{
+    width:90%;
+    height:75%;       
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    }
+
+.header1{
+    height:7vh;
+    width:1406.69px;
+    background-color:rgba(66, 63, 63, 0.6);
+    flex:0 0 auto;
+    margin:1px;
+    margin-top:0px;
+    position:fixed;
+   }
+
+h1{
+    justify-content:center;
+    font-size:36px;
+    color:antiquewhite;
+    display:flex;
+}
+
+.content1{
+    width:1406.69px;
+    flex:0 0 auto;
+    flex-wrap:wrap;
+    display:flex;
+}
+
+.content1 .leftcol{
+    max-width:20%;
+    height:680.69px;
+    background-color:rgba(7, 0, 0, 0.75);
+    display:flex;
+    margin-top:70px;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.leftcol img{
+    padding:5px;
+    width:240px;
+    height:170px;
+    object-fit:cover;
+    border-radius:100px;
+    flex:auto;
+    margin-top:15px;
+}
+
+.ing .title{
+ height:20px;
+ justify-content:center;
+ font-size:18px;
+ align-items:center;
+ flex:0 0 auto;
+ margin-bottom:20px;
+ margin-left:20px;
+ margin-top:-75px;
+ color:antiquewhite;
+}
+
+.ing ul{
+    justify-content: center;
+    align-items: center;
+    list-style:disc;
+    margin-left:50px;
+    color:antiquewhite;
+    font-size:14px;
+    margin-top:30px;
+}
+
+.content1 .rightcol{
+    width:1125.36px;
+    height:680.69px;
+    background-color:rgba(7, 0, 0, 0.75);
+    display:flex;
+    margin-top:70px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+
+.rightcol .lgdesc{
+    height: 10vh;
+    width:100%;
+    display:flex;
+    align-self:flex-start;
+    margin:5px;
+    margin-top:-5px;
+    color:antiquewhite;
+    justify-content:center;
+    text-align:start;
+    flex-wrap:wrap;
+    padding-top:10px;
+}
+
+.rightcol .lgstep{
+    height: 65vh;
+    width:100%;
+    max-height:680.69px;
+    display:flex;
+    align-self:flex-start;
+    margin:5px;
+    color:antiquewhite;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex:0 0 auto;
+}
+
+.rightcol h4{
+    height:3vh;
+    display:flex;
+    margin-top:-10px;
+    margin-bottom:-10px;
+}
+
+.rightcol ol{
+    display:inline-block;
+    width:100%;
+    align-items:center;
+    justify-content:center;
+    margin-top:-200px;
+}
+
+/* These CSS rules below just fixed the title and list's on the sugar cookies and guacamole pages. Moves them slightly up so 
+they are more in line with lasagna page and do not look out of place by being too far from other content */
+
+.guaca .ing .title{
+    margin-top:-230px;
+}
+
+.guaca .lgstep ol{
+    height:350px;
+}
+
+.suga .lgstep ol{
+    height:330px;
+}
+
+.suga .ing .title{
+    margin-top:-230px;
+}
+
+.suga .lgstep {
+    height:600px;
+    margin-top:-30px;
 }
